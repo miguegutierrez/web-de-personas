@@ -40,3 +40,18 @@ body {
 }
 
 
+article {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 18px;
+}
+
+span{
+  padding: 10px;
+  box-shadow: 0px 0px 5px #000;
+  
+}
+
+.filtro{
+  display: none;
+}
