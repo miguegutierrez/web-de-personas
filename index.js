@@ -61,7 +61,7 @@ themeSwitch.addEventListener(`click`, () => {
       }catch(error){
         //manejar error aqui
         console.log(error);
-        let message = error.statusText = "ocurrió un error";
+        let message = error.statusText = "ocurrió un error con la respuesta: prueba json-server -w db.json en la terminal";
         listaDePersonas.innerHTML = `Error ${error.status}:<br> ${message}`;
       }
       

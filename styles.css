@@ -34,6 +34,9 @@ body {
     color: var(--text-color);
   }
  
+  h1{
+    justify-items:center;
+  }
  
  h2 {
   color: var(--text-color);
