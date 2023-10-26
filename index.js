@@ -34,7 +34,7 @@ themeSwitch.addEventListener(`click`, () => {
 
   async function fetchData(){
     try{ 
-        const response = await fetch('http://localhost:3000/personas');
+        const response = await fetch('https://api.npoint.io/7aa84c899c5d1d440af5');
         const data = await response.json();
         
         console.log(response,data);
@@ -60,7 +60,7 @@ themeSwitch.addEventListener(`click`, () => {
       }catch(error){
         //manejar error aqui
         console.log(error);
-        let message = error.statusText = "ocurrió un error con la respuesta: prueba json-server -w db.json en la terminal";
+        let message = error.statusText = "ocurrió un error con la respuesta";
         listaDePersonas.innerHTML = `Error ${error.status}:<br> ${message}`;
       }
       
