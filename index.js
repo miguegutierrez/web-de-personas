@@ -36,8 +36,7 @@ themeSwitch.addEventListener(`click`, () => {
     try{ 
         const response = await fetch('http://localhost:3000/personas');
         const data = await response.json();
-        const $fragment = document.createDocumentFragment();
-        const listaDePersonas = document.getElementById("listaDePersonas"); 
+        
         console.log(response,data);
         
         //se manda al catch  el estado de respuesta (status)  y el mensaje dedicho error (statusText)
@@ -49,13 +48,13 @@ themeSwitch.addEventListener(`click`, () => {
           $span.innerHTML = 
             `
             <h3>${e.name}</h3><br>
-            <p>Telefono: ${e.phone}<p>
+            <p>Telefono: ${e.Phone}<p>
             <p>País: ${e.country}<p>
             `;
 
-          $fragment.appendChild($span);
+        
           
-          listaDePersonas.appendChild($fragment);
+          listaDePersonas.appendChild($span);
         });
 
       }catch(error){
